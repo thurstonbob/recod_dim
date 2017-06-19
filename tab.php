@@ -40,7 +40,7 @@ Tableau de recodage
 
 <!-- Latest compiled and minified Locales -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
-<script src="bootstrap-table-fr-FR.js"></script>
+<script src="script/bootstrap-table-fr-FR.js"></script>
 </head>
 
 <body>

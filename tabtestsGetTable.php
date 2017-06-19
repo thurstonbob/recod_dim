@@ -35,7 +35,7 @@ if ($result->num_rows > 0) {
     $arrVal = array();
     while($row = $result->fetch_array()) {
         $act_str=($row[7]=="0" ? "<a class='addButton text-center'id='".$row[2]."'>+ TAS</a>":"<a class='delButton text-center'id='".$row[2]."'>- TAS</a>");
-        $act_str.="&nbsp;<a class='remButton' id='".$row[2]."'><span class='glyphicon glyphicon-trash' id='".$row[0]."'></span></a>";
+        $act_str.=($row[7]=="0" ? "&nbsp;<a class='remButton' id='".$row[2]."'><span class='glyphicon glyphicon-trash' id='".$row[2]."'></span></a>":"");
         $name = array(
             'idtest' => $row[0],
             'idhosp' => "<a href='http://web100tprd.chu-nancy.fr/mwsiissrv.dll/hal/pmsi/dossierpmsi/browser/dossierResume?resume=".$row[2]."' target='_blank'>". $row[1]. "</a>",
