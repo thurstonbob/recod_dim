@@ -116,7 +116,6 @@ function drawChart() {
         dataType: "json",
         async: false
                                                       }).responseText;
-console.log(jsonData);
 var data = new google.visualization.DataTable(jsonData);
 
 var options = {
