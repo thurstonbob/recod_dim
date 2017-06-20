@@ -1,6 +1,6 @@
 <?
 header('Content-type: application/json');
-require 'include/dbconnect.php';
+require '../include/dbconnect.php';
 $cv="";
 $test_cv="";
 if(isset($_GET["cv"])) 

@@ -15,11 +15,11 @@
 	$result_sev = $conn->query($sql_sev);
 	
 ?>
-		<script src="script/bootstrap-table-fr-FR.js"></script>
+<script src="script/bootstrap-table-fr-FR.js"></script>
 
-			<script src="script/tabtest_bst.js" ></script>
+<script src="script/tabtest_bst.js" ></script>
 
-	
+
 
 <ul class="nav nav-tabs" role="tablist">
 	<li role="presentation" class="active"><a href="#tests" aria-controls="tests" role="tab" data-toggle="tab">Tests</a></li>
@@ -96,7 +96,7 @@
 				data-page-size="10"
 				data-locale="fr"
 				data-search="true"
-				data-url="tabtestsGetTable.php"                        
+				data-url="req/tabtestsGetTable.php"                        
 				data-query-params="queryParams"                        
 				data-method="get"
 				>
@@ -157,7 +157,7 @@
 				data-page-size="5"
 				data-locale="fr"
 				data-search="true"
-				data-url="tabtestsGetTableMulti.php"
+				data-url="req/tabtestsGetTableMulti.php"
 				data-query-params="queryParams2"                        
 				data-method="get"
 				>
@@ -216,7 +216,7 @@
 				data-page-size="5"
 				data-locale="fr"
 				data-search="true"
-				data-url="tabtestsGetTas.php"
+				data-url="req/tabtestsGetTas.php"
 				data-query-params="queryParams3"                        
 				data-method="get"
 				>
@@ -256,5 +256,5 @@
 </div><!--tabcontent-->
 <? $conn->close();?>
 <div>
-
-
+	
+	

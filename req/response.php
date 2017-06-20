@@ -1,6 +1,6 @@
 
 <?php
-require 'include/dbconnect.php';
+require '../include/dbconnect.php';
 if(isset($_POST["idrss"]) && strlen($_POST["idrss"])>0) 
 {    
     $idrss=$_POST["idrss"];
