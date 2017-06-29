@@ -5,6 +5,11 @@
 	$password = "drap26drwz";
 	$dbname = "tas";
 	
+        if($user->id == 0){
+        header('HTTP/1.1 500 : Problème de connexion, vous devez vous reconnecter :https://livenne.chu-nancy.fr/sitedim/'); //display sql errors.. must not output sql errors in live mode.
+        exit();
+        }
+        else{
 	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -77,7 +82,8 @@
 			$conn->rollback(); 
 			$conn->autocommit(TRUE); // i.e., end transaction   
 		}
-		$conn->close();
+        $conn->close();
+        }
 	?>
 	<script>
 	$(document).ready(function() {

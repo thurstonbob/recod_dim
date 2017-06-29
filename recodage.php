@@ -35,7 +35,10 @@ $(document).ready(function (e) {
                 success: function (returnhtml) {
                     $btn.button('reset');
                     $('#result').html(returnhtml);
-                }
+                },
+            error:function (xhr, ajaxOptions, thrownError){
+                alert(thrownError);
+			}
         });
     });
 });
@@ -43,7 +46,9 @@ $(document).ready(function (e) {
         </head>
 
         <body>
-<?
+<? 
+if($user->id == 0){echo "<h2>Problème de connexion, vous devez vous reconnecter :</h2><a href='https://livenne.chu-nancy.fr/sitedim/'>--> SiteDIM</a>";}else{
+
 echo '<pre>Bonjour ' . $user->get('name') . '</pre>';
 ?>
                 <div class="container">
@@ -57,5 +62,8 @@ echo '<pre>Bonjour ' . $user->get('name') . '</pre>';
 
                         </div><!--row-->
                 </div><!--container-->
+<?
+}
+?>
         </body>
 </html>
