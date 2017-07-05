@@ -61,7 +61,15 @@
 								
 							</li>
 						</ul>    
-						<ul class="nav navbar-nav navbar-right">
+                                                <ul class="nav navbar-nav navbar-right">
+<? 
+            if(isset($_SESSION['id'])&& $_SESSION['id']=='u400274'){
+?>
+
+							<li><a href="signup.php"><span class="glyphicon glyphicon-floppy-disk"></span>Enregistrement</a></li>
+<?
+        }
+?>
 							<li><a href="#"><span class="glyphicon glyphicon-user"></span> <?=$_SESSION['name'];?> </a></li>
 							<li><a href="logout.php?destroy"><span class="glyphicon glyphicon-log-in"></span> Quitter</a></li>
 						</ul>
